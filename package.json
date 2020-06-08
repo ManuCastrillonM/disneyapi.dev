@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "name": "disney-api-site",
+  "description": "Disney API documentation website",
+  "version": "1.0.0",
+  "author": "Manuela Castrillon <manu.cm43@gmail.com>",
   "dependencies": {
     "gatsby": "^2.22.15",
     "gatsby-image": "^2.4.5",
@@ -22,9 +21,11 @@
     "prettier": "2.0.5"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "api",
+    "disney"
   ],
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -36,9 +37,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ManuCastrillonM/disneyapi.dev"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ManuCastrillonM/disneyapi.dev/issues"
   }
 }

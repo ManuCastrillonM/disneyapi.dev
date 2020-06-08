@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Disney API`,
+    description: `The Disney API is a rest API based on the Disney characters`,
+    author: `@manucastrillonm`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
