@@ -1,0 +1,13 @@
+.header {
+  background-color: lavender;
+  padding: 30px;
+}
+
+.header-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-item {
+  margin-left: 10px;
+}
