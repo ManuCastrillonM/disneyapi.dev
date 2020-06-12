@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
         <Link to="/about">About</Link>
       </li>
       <li className={styles.headerItem}>
-        <Link to="/documentation">Docs</Link>
+        <Link to="/docs">Docs</Link>
       </li>
     </ul>
   </header>
