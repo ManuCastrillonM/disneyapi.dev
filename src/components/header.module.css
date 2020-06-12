@@ -1,6 +1,13 @@
 .header {
-  background-color: lavender;
+  background-color: #d03e35;
   padding: 30px;
+}
+
+.header-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .header-list {

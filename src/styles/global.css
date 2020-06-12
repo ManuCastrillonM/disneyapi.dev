@@ -1,3 +1,12 @@
+/* Colors:
+red: #d03e35
+orange: #f49807
+terracota: #975840
+black: #2f2f30
+beige: #f2e1d2
+*/
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -21,4 +30,10 @@ ul {
 
 ul li {
   list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
 }

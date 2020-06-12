@@ -1,0 +1,50 @@
+.hero {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.demo {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.demo-button {
+  background: #d03e35;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.demo-input {
+  border: none;
+  flex: 1;
+}
+
+.demo-request {
+  border: 1px solid #2f2f30;
+  display: flex;
+}
+
+.demo-result {
+  border: 1px solid #2f2f30;
+  margin: 40px 0;
+  padding: 10px;
+}
+
+.demo-title {
+  margin-bottom: 10px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.demo-url {
+  background: #d03e35;
+  color: #fff;
+  padding: 5px 10px;
+}
