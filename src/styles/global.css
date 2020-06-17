@@ -24,21 +24,6 @@ a {
   text-decoration: underline #f49807 solid;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
 .container {
   margin: 0 auto;
   max-width: 800px;

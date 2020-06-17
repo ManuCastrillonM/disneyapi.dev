@@ -13,8 +13,11 @@
 .header-list {
   display: flex;
   justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .header-item {
+  list-style-type: none;
   margin-left: 10px;
 }

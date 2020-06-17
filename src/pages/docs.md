@@ -1,6 +1,6 @@
 ---
 slug: "/docs"
-title: "Docs"
+title: "Documentation"
 ---
 
 Aliqua esse nulla incididunt nostrud. Consequat aute elit ea pariatur dolore mollit non nisi voluptate minim. Culpa in velit adipisicing fugiat excepteur ut consequat qui. Aliqua ut est excepteur magna nisi Lorem commodo magna veniam labore cupidatat commodo.
