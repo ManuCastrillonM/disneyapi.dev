@@ -22,7 +22,7 @@ module.exports = {
         short_name: `disney API`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/mickey-silhouette.svg`, // This path is relative to the root of the site.
       },
     }, {
       resolve: `gatsby-source-filesystem`,
