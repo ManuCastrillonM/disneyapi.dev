@@ -8,7 +8,7 @@ beige: #f2e1d2
 
 
 html {
-  font-family: sans-serif;
+  font-family: 'DM Sans', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -20,7 +20,8 @@ body {
 }
 
 a {
-  text-decoration: none;
+  color: #fff;
+  text-decoration: underline #f49807 solid;
 }
 
 ul {
@@ -36,4 +37,10 @@ h1,
 h2,
 h3 {
   margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 30px;
 }

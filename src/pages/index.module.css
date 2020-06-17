@@ -1,16 +1,18 @@
 .hero {
-  padding: 100px 0;
+  padding-bottom: 100px;
+  padding-top: 100px;
   text-align: center;
 }
 
 .hero-title {
+  text-decoration: underline #f49807 solid;
   font-size: 80px;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .demo {
-  margin: 0 auto;
-  max-width: 900px;
+  background: #2f2f30;
 }
 
 .demo-button {
@@ -24,23 +26,28 @@
 .demo-input {
   border: none;
   flex: 1;
+  min-width: 80px;
 }
 
 .demo-request {
   border: 1px solid #2f2f30;
   display: flex;
+  font-size: 14px;
 }
 
 .demo-result {
-  border: 1px solid #2f2f30;
+  background-color: #fff;
+  border: 1px solid #f49807;
   margin: 40px 0;
   padding: 10px;
 }
 
 .demo-title {
-  margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 20px;
   font-size: 35px;
   text-align: center;
+  text-decoration: underline #f49807 solid;
 }
 
 .demo-url {
