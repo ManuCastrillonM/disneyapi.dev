@@ -40,6 +40,17 @@ module.exports = {
           }
         ],
       },
+    }, {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-93858303-4",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        pageTransitionDelay: 0,
+        defer: false
+      },
     }
   ],
   pathPrefix: "/",
