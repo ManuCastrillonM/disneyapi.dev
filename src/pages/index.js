@@ -17,6 +17,7 @@ const Hero = () => (
     <div className="container">
       <h1 className={styles.heroTitle}>Disney API</h1>
       <h2>The REST API based on Disney characters</h2>
+      <p>🛠 Project under development, not ready to be used yet</p>
     </div>
   </div>
 )
