@@ -51,7 +51,18 @@ module.exports = {
         pageTransitionDelay: 0,
         defer: false
       },
-    }
+    }, {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Disney API`,
+        short_name: `Disney API`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#d03e35`,
+        display: `standalone`,
+        icon: `src/images/mickey-silhouette.svg`
+      },
+    },
   ],
   pathPrefix: "/",
 }
