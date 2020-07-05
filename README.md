@@ -7,6 +7,8 @@
   Disney API
 </h1>
 
+![CI](https://github.com/ManuCastrillonM/disneyapi.dev/workflows/CI/badge.svg)
+
 Sourcecode for Disney API [documentation website](https://www.disneyapi.dev)
 
 ## 🚀 Quick start
