@@ -1,11 +1,15 @@
-import React from "react"
-import styles from "./footer.module.css"
+import React from 'react'
+import styles from './footer.module.css'
 
 const Footer = () => (
   <footer className={styles.footer}>
+    <div>
+      <a href="https://status.disneyapi.dev/">Server Status</a>
+    </div>
     <div className={styles.footerAuthor}>
-      Made with ❤ by <a href="https://github.com/ManuCastrillonM">@manucastrillonm</a>
-      , <a href="https://github.com/martineliasq">@martineliasq</a> and <a href="/">contributors</a> - 2020
+      Made with ❤ by{' '}
+      <a href="https://github.com/ManuCastrillonM">a Disney Fan</a> and{' '}
+      <a href="/">contributors</a> - 2020
     </div>
     <div>
       Disney and Disney characters are trademarks of Walt Disney Company
