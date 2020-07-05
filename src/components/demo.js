@@ -19,7 +19,7 @@ export default class Demo extends React.Component {
 
     if (!e || e.keyCode === 13 || e.target === sendButton) {
       axios
-        .get(`http://api.disneyapi.dev/${input.value}`)
+        .get(`https://api.disneyapi.dev/${input.value}`)
         .then((response) => {
           this.setState({ queryResult: JSON.stringify(response, undefined, 2) })
         })
