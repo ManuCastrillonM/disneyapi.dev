@@ -1,11 +1,5 @@
 {
   "semi": false,
-  "parserOptions": {
-    "ecmaVersion": 6
-  },
-  "env": {
-    "es6": true
-  },
   "singleQuote": true,
   "trailingComma": "none",
   "bracketSpacing": true,
