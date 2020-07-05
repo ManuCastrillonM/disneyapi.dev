@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Disney API`,
     description: `The Disney API is a rest API based on the Disney characters`,
-    author: `@manucastrillonm`,
+    author: `@manucastrillonm`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,24 +13,27 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    }, {
+        path: `${__dirname}/src/images`
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
         short_name: `disney API`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/mickey-silhouette.svg`, // This path is relative to the root of the site.
-      },
-    }, {
+        icon: `src/images/mickey-silhouette.svg` // This path is relative to the root of the site.
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages/`,
-      },
-    }, {
+        path: `${__dirname}/src/pages/`
+      }
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
@@ -38,17 +41,19 @@ module.exports = {
             family: `DM Sans`,
             variants: [`400`, `700`]
           }
-        ],
-      },
-    }, {
+        ]
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-93858303-4",
+        trackingId: 'UA-93858303-4',
         head: false,
         anonymize: true,
         respectDNT: true
-      },
-    }, {
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Disney API`,
@@ -58,8 +63,8 @@ module.exports = {
         theme_color: `#d03e35`,
         display: `standalone`,
         icon: `src/images/mickey-silhouette.svg`
-      },
-    },
+      }
+    }
   ],
-  pathPrefix: "/",
+  pathPrefix: '/'
 }

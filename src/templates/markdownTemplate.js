@@ -1,10 +1,10 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import styles from "./markdownTemplate.module.css"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import styles from './markdownTemplate.module.css'
 
-const Template = ({data}) => {
+const Template = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
 
