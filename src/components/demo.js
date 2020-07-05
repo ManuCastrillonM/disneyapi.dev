@@ -21,7 +21,7 @@ export default class Demo extends React.Component {
       axios
         .get(`https://api.disneyapi.dev/${input.value}`)
         .then((response) => {
-          this.setState({ queryResult: JSON.stringify(response, undefined, 2) })
+          this.setState({ queryResult: JSON.stringify(response.data, undefined, 2) })
         })
         .catch((e) => {
           this.setState({ queryResult: e.toString() })
