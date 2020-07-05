@@ -1,8 +1,10 @@
-import React from "react"
+import React from 'react'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import styles from "./index.module.css"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import styles from './index.module.css'
+
+import Demo from '../components/demo'
 
 const IndexPage = () => (
   <Layout>
@@ -17,27 +19,18 @@ const Hero = () => (
     <div className="container">
       <h1 className={styles.heroTitle}>Disney API</h1>
       <h2>The REST API based on Disney characters</h2>
-      <p>🛠 Project under development, not ready to be used yet</p>
     </div>
   </div>
 )
 
-const Demo = () => (
-  <div className={styles.demo}>
-    <div className="container">
-      <h3 className={styles.demoTitle}>Try it</h3>
-      <div className={styles.demoRequest}>
-        <span className={styles.demoUrl}>https://disneyapi.dev/api/</span>
-        <input className={styles.demoInput} type="text" placeholder="characters" aria-label="api endpoint"/>
-        <button className={styles.demoButton}>send</button>
-      </div>
-      <div className={styles.demoResult}>
-        <pre>
-          {'{ name: "Mickey Mouse" }'}.
-        </pre>
-      </div>
-    </div>
-  </div>
-)
+// function getData() {
+//   const input = document.getElementById('endpointInput')
+//   axios.get(`http://api.disneyapi.dev/${input.value}`).then((response) => {
+//     queryResult = JSON.stringify(response)
+//     console.log('query result: ', queryResult)
+//   })
+
+//   console.log('hello world')
+// }
 
 export default IndexPage

@@ -7,7 +7,34 @@
 }
 
 .template-content p {
-  font-size: 14px;
+  font-size: 15px;
+}
+
+.template-content h2 {
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+.template-content pre {
+  background: #2f2f30;
+  border-radius: 5px;
+  color: #fff;
+  overflow-x: scroll;
+  padding: 2em;
+}
+
+.template-content table {
+  border-collapse: collapse;
+}
+
+.template-content tr {
+  border-bottom: 1px solid #f49807;
+}
+
+.template-content td,
+.template-content th {
+  padding: 8px;
+  text-align: left;
 }
 
 .template-title {
