@@ -27,21 +27,25 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'DM Sans',
+              variants: ['400', '700']
+            }
+          ]
+        }
+        // usePreload: true,
+        // usePreconnect: false
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/`
-      }
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `DM Sans`,
-            variants: [`400`, `700`]
-          }
-        ]
       }
     },
     {
