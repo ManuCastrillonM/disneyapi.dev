@@ -26,18 +26,22 @@ Here you can find info about the available endpoints.
 
 ### Character
 
-There's a total of 🙊characters available
+There's a total of 7438 characters available
 
-| Key             | Type        | Description                          |
-| --------------- | ----------- | ------------------------------------ |
-| id              | Integer     | The identifier for this character    |
-| name            | String      | The name of the character            |
-| firstAppereance | Integer     | The character first appeareance year |
-| CreatedBy       | [String]    | List of the character creators       |
-| species         | String      | The species of the character         |
-| gender          | String      | The gender of the character          |
-| relatives       | [Character] | List of the character relatives      |
-| imageUrl        | String      | The character image url              |
+| Key             | Type     |
+| --------------- | -------- |
+| \_id            | Integer  |
+| url             | String   |
+| name            | String   |
+| sourceUrl       | String   |
+| films           | [String] |
+| shortFilms      | [String] |
+| tvShows         | [String] |
+| videoGames      | [String] |
+| alignment       | String   |
+| parkAttractions | [String] |
+| allies          | [String] |
+| enemies         | [String] |
 
 ## Endpoints
 
@@ -49,28 +53,32 @@ Get the list of all characters using the `/characters` endpoint.
 http://api.disneyapi.dev/characters
 ```
 
-```javascript
-[
-  {
-    "_id":"5efff6d396fcf28a2244eada",
-  "firstAppareance":1928,
-  "createdBy":["Walt Disney","Ub Iwerks"],
-  "name":"Minnie Mouse",
-  "species":"Mouse",
-  "gender":"Female",
-  "relatives":["Mickey Mouse"],
-  "imageUrl":"https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Minnie_Mouse.png/220px-Minnie_Mouse.png"
-  },{
-    "_id":"5efff6d396fcf28a2244eadb",
-    "firstAppareance":1928,
-    "createdBy":["Walt Disney","Ub Iwerks"],
-    "name":"Mickey Mouse",
-    "species":"Mouse","gender":"Male",
-    "relatives":["Minnie Mouse"],
-    "imageUrl":"https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Mickey_Mouse.png/220px-Mickey_Mouse.png"
-  }
-  ...
-]
+```json
+{
+  "data": [
+    {
+      "_id":308,
+      "films":["Tangled","Tangled: Before Ever After"],
+      "shortFilms":["Tangled Ever After","Hare Peace"],
+      "tvShows":["Once Upon a Time","Tangled: The Series"],
+      "videoGames":["Disney Princess Enchanting Storybooks","Hidden Worlds","Disney Crossy Road","Kingdom Hearts III"],
+      "parkAttractions":["Celebrate the Magic","Jingle Bell, Jingle BAM!"],
+      "allies":[],
+      "enemies":[],
+      "sourceUrl":"https://disney.fandom.com/wiki/Queen_Arianna",
+      "name":"Queen Arianna",
+      "imageUrl":"https://static.wikia.nocookie.net/disney/images/1/15/Arianna_Tangled.jpg/revision/latest?cb=20160715191802",
+      "createdAt":"2021-04-12T01:33:34.458Z",
+      "updatedAt":"2021-04-12T01:33:34.458Z",
+      "url":"https://api.disneyapi.dev/characters/308",
+      "__v":0
+    }
+    ...
+  ],
+  "count": 50,
+  "previousPage": "https://api.disneyapi.dev/characters?page=3",
+  "nextPage": "https://api.disneyapi.dev/characters?page=5",
+}
 ```
 
 ### Get one character
@@ -81,17 +89,27 @@ Get the details about one character using the `character/:id` endpoint.
 http://api.disneyapi.dev/characters/:id
 ```
 
-```javascript
-// http://api.disneyapi.dev/characters/5efff6d396fcf28a2244eada
-
+```json
 {
-    "_id":"5efff6d396fcf28a2244eada",
-  "firstAppareance":1928,
-  "createdBy":["Walt Disney","Ub Iwerks"],
-  "name":"Minnie Mouse",
-  "species":"Mouse",
-  "gender":"Female",
-  "relatives":["Mickey Mouse"],
-  "imageUrl":"https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Minnie_Mouse.png/220px-Minnie_Mouse.png"
+  "_id": 308,
+  "films": ["Tangled", "Tangled: Before Ever After"],
+  "shortFilms": ["Tangled Ever After", "Hare Peace"],
+  "tvShows": ["Once Upon a Time", "Tangled: The Series"],
+  "videoGames": [
+    "Disney Princess Enchanting Storybooks",
+    "Hidden Worlds",
+    "Disney Crossy Road",
+    "Kingdom Hearts III"
+  ],
+  "parkAttractions": ["Celebrate the Magic", "Jingle Bell, Jingle BAM!"],
+  "allies": [],
+  "enemies": [],
+  "sourceUrl": "https://disney.fandom.com/wiki/Queen_Arianna",
+  "name": "Queen Arianna",
+  "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/15/Arianna_Tangled.jpg/revision/latest?cb=20160715191802",
+  "createdAt": "2021-04-12T01:33:34.458Z",
+  "updatedAt": "2021-04-12T01:33:34.458Z",
+  "url": "https://api.disneyapi.dev/characters/308",
+  "__v": 0
 }
 ```
