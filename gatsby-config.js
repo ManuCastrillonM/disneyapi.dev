@@ -37,8 +37,6 @@ module.exports = {
             }
           ]
         }
-        // usePreload: true,
-        // usePreconnect: false
       }
     },
     {

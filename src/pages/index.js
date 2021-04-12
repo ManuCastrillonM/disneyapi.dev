@@ -23,14 +23,4 @@ const Hero = () => (
   </div>
 )
 
-// function getData() {
-//   const input = document.getElementById('endpointInput')
-//   axios.get(`http://api.disneyapi.dev/${input.value}`).then((response) => {
-//     queryResult = JSON.stringify(response)
-//     console.log('query result: ', queryResult)
-//   })
-
-//   console.log('hello world')
-// }
-
 export default IndexPage
