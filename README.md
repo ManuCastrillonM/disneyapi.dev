@@ -17,7 +17,7 @@ Sourcecode for Disney API [documentation website](https://www.disneyapi.dev)
   > git clone https://github.com/ManuCastrillonM/disneyapi.dev
   > cd disneyapi.dev
   > npm install
-  > gatsby develop
+  > npm run develop
 ```
 
 The site is now running at `http://localhost:8000` 🎉
