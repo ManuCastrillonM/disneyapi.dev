@@ -9,7 +9,10 @@ const Footer = () => (
     <div className={styles.footerAuthor}>
       Made with ❤ by{' '}
       <a href="https://github.com/ManuCastrillonM">a Disney Fan</a> and{' '}
-      <a href="/">contributors</a> - 2020
+      <a href="https://github.com/ManuCastrillonM/disney-api#contributors-">
+        contributors
+      </a>{' '}
+      - 2021
     </div>
     <div>
       Disney and Disney characters are trademarks of Walt Disney Company

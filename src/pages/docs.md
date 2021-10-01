@@ -20,7 +20,21 @@ Here you can find info about the available endpoints.
 
 ## GraphQL
 
-✨ Soon...
+https://api.disneyapi.dev/graphql
+
+```javascript
+character(_id: Int!): Character
+
+characters(page: Int) {
+  items: [Character]
+  paginationInfo: {
+    hasPreviousPage: Boolean!
+    hasNextPage: Boolean!
+    pageItemCount: Int!
+    totalPages: Int!
+  }
+}
+```
 
 ## Schemas
 

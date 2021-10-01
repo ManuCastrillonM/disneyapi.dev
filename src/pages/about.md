@@ -41,4 +41,4 @@ Disney belongs to Walt Disney Company.
 
 This project is Open Source and uses BSD license.
 
-The info has been collected from Wikipedia.
+The info has been collected from [Disney Wiki](https://disney.fandom.com/wiki/The_Disney_Wiki).
