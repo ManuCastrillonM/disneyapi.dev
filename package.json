@@ -46,5 +46,8 @@
   },
   "bugs": {
     "url": "https://github.com/ManuCastrillonM/disneyapi.dev/issues"
+  },
+  "engines": {
+    "node": "14.^"
   }
 }
