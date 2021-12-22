@@ -28,7 +28,7 @@
 }
 
 .template-content tr {
-  border-bottom: 1px solid #f49807;
+  border-bottom: 1px solid #f9dc5c;
 }
 
 .template-content td,
@@ -40,5 +40,5 @@
 .template-title {
   color: #2f2f30;
   margin-bottom: 20px;
-  text-decoration: underline #f49807 solid;
+  text-decoration: underline #f9dc5c solid;
 }

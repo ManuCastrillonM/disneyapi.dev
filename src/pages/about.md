@@ -3,13 +3,9 @@ slug: '/about'
 title: 'About'
 ---
 
-Disney API is a restful API based on Disney characters. Using this API you can get information on Disney characters and movies. This API based on information collected through internet and TV shows.
+Disney API is a restful and GraphQL API based on Disney characters. Using this API you can get information on Disney characters.
 
 To start using this API [check the docs](https://www.disneyapi.dev/docs)
-
-## WIP
-
-This project is still under development, I'm working on incorporating more endpoints, improving the database, and adding a GraphQL API.
 
 ## The reason behind this project
 
@@ -21,17 +17,13 @@ This project was built using Node.js and a MongoDB database both deployed using 
 
 ## Author
 
-This project is created by [Manu Castrillon](https://github.com/manuCastrillonM/), web developer, nerd, but mostly a Disney fan.
+This project is created by [Manu Castrillon](https://github.com/manuCastrillonM/), software engineer, nerd, but mostly a Disney fan.
 
 ## Contribute
 
-This is an open source project, that means you can contribute to it. Contributing you can help us improve this project so it can be used by many more developers.
+This is an open source project, that means you can contribute to it. Contributing you can help us improve this project so it can be used by more developers.
 
 Check the [Backend API](https://github.com/ManuCastrillonM/disney-api) and [Frontend API docs](https://github.com/ManuCastrillonM/disneyapi.dev) repositories to contribute.
-
-## Missing data
-
-We are still collecting info to fill the database, you can help us improve it by contributing to the project.
 
 ## Copyright notice
 

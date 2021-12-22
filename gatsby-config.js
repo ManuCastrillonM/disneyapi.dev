@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Disney API`,
-    description: `The Disney API is a rest API based on the Disney characters`,
+    description: `Disney API is a rest and GraphQL API based on the Disney characters`,
     author: `@manucastrillonm`
   },
   plugins: [
@@ -34,6 +34,10 @@ module.exports = {
             {
               family: 'DM Sans',
               variants: ['400', '700']
+            },
+            {
+              family: 'Poppins',
+              variants: ['600']
             }
           ]
         }
@@ -62,7 +66,7 @@ module.exports = {
         short_name: `Disney API`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#d03e35`,
+        theme_color: `#ed254e`,
         display: `standalone`,
         icon: `src/images/mickey-silhouette.svg`
       }

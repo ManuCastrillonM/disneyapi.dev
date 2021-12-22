@@ -1,11 +1,3 @@
-/* Colors:
-red: #d03e35
-orange: #f49807
-terracota: #975840
-black: #2f2f30
-beige: #f2e1d2
-*/
-
 html {
   font-family: 'DM Sans', sans-serif;
   -ms-text-size-adjust: 100%;
@@ -13,6 +5,8 @@ html {
 }
 
 body {
+  background-color: #f7f7ff;
+  color: #011936;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,7 +14,7 @@ body {
 
 a {
   color: #fff;
-  text-decoration: underline #f49807 solid;
+  text-decoration: underline #f9dc5c solid;
 }
 
 .container {

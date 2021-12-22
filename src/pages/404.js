@@ -17,7 +17,7 @@ const NotFoundPage = () => (
         style={{
           fontSize: `20vw`,
           margin: `0`,
-          textDecoration: `underline #f49807 solid`
+          textDecoration: `underline #f9dc5c solid`
         }}
       >
         404
