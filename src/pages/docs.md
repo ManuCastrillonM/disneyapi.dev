@@ -9,7 +9,7 @@ This API is GET only and no authentication is required to access it.
 
 **Base url:** https://api.disneyapi.dev
 
-Here you can find info about the available endpoints.
+Available endpoints:
 
 ```javascript
 {
@@ -20,10 +20,14 @@ Here you can find info about the available endpoints.
 
 ## GraphQL
 
-https://api.disneyapi.dev/graphql
+**Base url:** https://api.disneyapi.dev/graphql
+
+Available queries:
 
 ```javascript
 character(_id: Int!): Character
+
+characterByName(name: String!): Character
 
 characters(page: Int) {
   items: [Character]
@@ -64,7 +68,7 @@ There's a total of 7438 characters available
 Get the list of all characters using the `/characters` endpoint.
 
 ```
-http://api.disneyapi.dev/characters
+https://api.disneyapi.dev/characters
 ```
 
 ```json
@@ -100,7 +104,7 @@ http://api.disneyapi.dev/characters
 Get the details about one character using the `character/:id` endpoint.
 
 ```
-http://api.disneyapi.dev/characters/:id
+https://api.disneyapi.dev/characters/:id
 ```
 
 ```json
