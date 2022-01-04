@@ -12,6 +12,11 @@
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+
+.header-link:hover {
+  color: #011936;
 }
 
 .header-list {

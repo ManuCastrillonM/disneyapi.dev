@@ -2,8 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import styles from './index.module.css'
-
+import Hero from '../components/hero'
 import Demo from '../components/demo'
 
 const IndexPage = () => (
@@ -12,15 +11,6 @@ const IndexPage = () => (
     <Hero />
     <Demo />
   </Layout>
-)
-
-const Hero = () => (
-  <div className={styles.hero}>
-    <div className="container">
-      <h1 className={styles.heroTitle}>Disney API</h1>
-      <h2>The REST and GraphQL API based on Disney characters</h2>
-    </div>
-  </div>
 )
 
 export default IndexPage
