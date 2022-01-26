@@ -7,7 +7,7 @@
   Disney API
 </h1>
 
-![CI](https://github.com/ManuCastrillonM/disneyapi.dev/workflows/CI/badge.svg)
+[![CI](https://github.com/ManuCastrillonM/disneyapi.dev/actions/workflows/main.yml/badge.svg)](https://github.com/ManuCastrillonM/disneyapi.dev/actions/workflows/main.yml)
 
 Sourcecode for Disney API [documentation website](https://www.disneyapi.dev)
 
