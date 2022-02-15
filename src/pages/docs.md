@@ -101,7 +101,7 @@ https://api.disneyapi.dev/characters
 
 ### Get one character
 
-Get the details about one character using the `character/:id` endpoint.
+Get the details about one character using the `characters/:id` endpoint.
 
 ```
 https://api.disneyapi.dev/characters/:id
