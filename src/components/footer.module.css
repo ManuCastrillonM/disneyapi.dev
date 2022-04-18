@@ -9,3 +9,25 @@
 .footer-author {
   margin: 20px 0;
 }
+
+.footer-server-status {
+  position: relative;
+}
+
+.footer-server-status::before {
+  content: "";
+  border-radius: 50%;
+  left: -18px;
+  top: 2px;
+  height: 14px;
+  width: 14px;
+  position:absolute;
+}
+
+.footer-server-status-green::before {
+  background-color: greenyellow;
+}
+
+.footer-server-status-red::before {
+  background-color: red;
+}
