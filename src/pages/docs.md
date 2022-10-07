@@ -112,24 +112,12 @@ characters(page: Int) {
 ```
 
 ### Use example
-- [Get a character by id](https://api.disneyapi.dev/graphql?query=%7B%0A%20%20character(_id%3A4703)%20%7B%0A%20%20%20%20_id%0A%09%09name%0A%20%20%20%20url%0A%20%20%20%20imageUrl%0A%20%20%20%20films%0A%20%20%20%20shortFilms%0A%20%20%7D%0A%7D)
+
+- [Get a character by id](<https://api.disneyapi.dev/graphql?query=%7B%0A%20%20character(_id%3A4703)%20%7B%0A%20%20%20%20_id%0A%09%09name%0A%20%20%20%20url%0A%20%20%20%20imageUrl%0A%20%20%20%20films%0A%20%20%20%20shortFilms%0A%20%20%7D%0A%7D>)
+
   ```graphql
   {
-    character(_id:4703) {
-      _id
-      name
-      url
-      imageUrl
-      films
-      shortFilms
-    }
-  }
-  ```
-  
-- [Get a character by name](https://api.disneyapi.dev/graphql?query=%7B%0A%20%20characterByName(name%3A%22Mickey%20Mouse%22)%20%7B%0A%20%20%20%20_id%0A%09%09name%0A%20%20%20%20url%0A%20%20%20%20imageUrl%0A%20%20%20%20films%0A%20%20%20%20shortFilms%0A%20%20%7D%0A%7D)
-  ```graphql
-  {
-    characterByName(name:"Mickey Mouse") {
+    character(_id: 4703) {
       _id
       name
       url
@@ -140,7 +128,22 @@ characters(page: Int) {
   }
   ```
 
-- [Gat all characters](https://api.disneyapi.dev/graphql?query=%7B%0A%20%20characters(page%3A%202)%20%7B%0A%20%20%20%20items%20%7B%0A%20%20%20%20%20%20_id%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%20%20paginationInfo%20%7B%0A%20%20%20%20%20%20hasPreviousPage%0A%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%20%20pageItemCount%0A%20%20%20%20%20%20totalPages%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
+- [Get a character by name](<https://api.disneyapi.dev/graphql?query=%7B%0A%20%20characterByName(name%3A%22Mickey%20Mouse%22)%20%7B%0A%20%20%20%20_id%0A%09%09name%0A%20%20%20%20url%0A%20%20%20%20imageUrl%0A%20%20%20%20films%0A%20%20%20%20shortFilms%0A%20%20%7D%0A%7D>)
+
+  ```graphql
+  {
+    characterByName(name: "Mickey Mouse") {
+      _id
+      name
+      url
+      imageUrl
+      films
+      shortFilms
+    }
+  }
+  ```
+
+- [Gat all characters](<https://api.disneyapi.dev/graphql?query=%7B%0A%20%20characters(page%3A%202)%20%7B%0A%20%20%20%20items%20%7B%0A%20%20%20%20%20%20_id%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%20%20paginationInfo%20%7B%0A%20%20%20%20%20%20hasPreviousPage%0A%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%20%20pageItemCount%0A%20%20%20%20%20%20totalPages%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D>)
   ```graphql
   {
     characters(page: 2) {
@@ -157,6 +160,7 @@ characters(page: Int) {
     }
   }
   ```
+
 ## Schemas
 
 ### Character
@@ -177,4 +181,3 @@ There's a total of 7438 characters available
 | parkAttractions | [String] |
 | allies          | [String] |
 | enemies         | [String] |
-
