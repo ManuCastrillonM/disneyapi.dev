@@ -13,6 +13,7 @@ Available endpoints:
 
 ```javascript
 {
+  filterCharacter: 'https://api.disneyapi.dev/character?queryParams',
   getAllCharacters: 'https://api.disneyapi.dev/characters',
   getOneCharacter: 'https://api.disneyapi.dev/characters/:id'
 }
@@ -30,29 +31,29 @@ Available endpoints:
 
   ```json
   {
-    "data": [
-      {
-        "_id":308,
-        "films":["Tangled","Tangled: Before Ever After"],
-        "shortFilms":["Tangled Ever After","Hare Peace"],
-        "tvShows":["Once Upon a Time","Tangled: The Series"],
-        "videoGames":["Disney Princess Enchanting Storybooks","Hidden Worlds","Disney Crossy Road","Kingdom Hearts III"],
-        "parkAttractions":["Celebrate the Magic","Jingle Bell, Jingle BAM!"],
-        "allies":[],
-        "enemies":[],
-        "sourceUrl":"https://disney.fandom.com/wiki/Queen_Arianna",
-        "name":"Queen Arianna",
-        "imageUrl":"https://static.wikia.nocookie.net/disney/images/1/15/Arianna_Tangled.jpg/revision/latest?cb=20160715191802",
-        "createdAt":"2021-04-12T01:33:34.458Z",
-        "updatedAt":"2021-04-12T01:33:34.458Z",
-        "url":"https://api.disneyapi.dev/characters/308",
-        "__v":0
-      }
-      ...
-    ],
-    "count": 50,
-    "previousPage": "https://api.disneyapi.dev/characters?page=3",
-    "nextPage": "https://api.disneyapi.dev/characters?page=5",
+      "data": [
+        {
+          "_id":308,
+          "films":["Tangled","Tangled: Before Ever After"],
+          "shortFilms":["Tangled Ever After","Hare Peace"],
+          "tvShows":["Once Upon a Time","Tangled: The Series"],
+          "videoGames":["Disney Princess Enchanting Storybooks","Hidden Worlds","Disney Crossy Road","Kingdom Hearts III"],
+          "parkAttractions":["Celebrate the Magic","Jingle Bell, Jingle BAM!"],
+          "allies":[],
+          "enemies":[],
+          "sourceUrl":"https://disney.fandom.com/wiki/Queen_Arianna",
+          "name":"Queen Arianna",
+          "imageUrl":"https://static.wikia.nocookie.net/disney/images/1/15/Arianna_Tangled.jpg/revision/latest?cb=20160715191802",
+          "createdAt":"2021-04-12T01:33:34.458Z",
+          "updatedAt":"2021-04-12T01:33:34.458Z",
+          "url":"https://api.disneyapi.dev/characters/308",
+          "__v":0
+        }
+        ...
+      ],
+      "count": 50,
+      "previousPage": "https://api.disneyapi.dev/characters?page=3",
+      "nextPage": "https://api.disneyapi.dev/characters?page=5",
   }
   ```
 
@@ -61,31 +62,67 @@ Available endpoints:
   Get the details about one character using the `characters/:id` endpoint.
 
   ```
-  https://api.disneyapi.dev/characters/:id
+  https://api.disneyapi.dev/characters/308
   ```
 
   ```json
   {
-    "_id": 308,
-    "films": ["Tangled", "Tangled: Before Ever After"],
-    "shortFilms": ["Tangled Ever After", "Hare Peace"],
-    "tvShows": ["Once Upon a Time", "Tangled: The Series"],
-    "videoGames": [
-      "Disney Princess Enchanting Storybooks",
-      "Hidden Worlds",
-      "Disney Crossy Road",
-      "Kingdom Hearts III"
-    ],
-    "parkAttractions": ["Celebrate the Magic", "Jingle Bell, Jingle BAM!"],
-    "allies": [],
-    "enemies": [],
-    "sourceUrl": "https://disney.fandom.com/wiki/Queen_Arianna",
-    "name": "Queen Arianna",
-    "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/15/Arianna_Tangled.jpg/revision/latest?cb=20160715191802",
-    "createdAt": "2021-04-12T01:33:34.458Z",
-    "updatedAt": "2021-04-12T01:33:34.458Z",
-    "url": "https://api.disneyapi.dev/characters/308",
-    "__v": 0
+      _id: 308,
+      films: [
+        "Tangled",
+        "Tangled: Before Ever After",
+      ],
+      shortFilms: [
+        "Tangled Ever After",
+        "Hare Peace",
+      ],
+      tvShows: [
+        "Once Upon a Time",
+        "Tangled: The Series",
+      ],
+      videoGames: [
+        "Disney Princess Enchanting Storybooks",
+        "Hidden Worlds",
+        "Disney Crossy Road",
+        "Kingdom Hearts III",
+      ],
+      parkAttractions: [
+        "Celebrate the Magic",
+        "Jingle Bell, Jingle BAM!",
+      ],
+      allies: [ ],
+      enemies: [ ],
+      name: "Queen Arianna",
+      imageUrl: "https://static.wikia.nocookie.net/disney/images/1/15/Arianna_Tangled.jpg",
+      url: "https://api.disneyapi.dev/characters/308",
+  }
+  ```
+
+- [Filter characters](https://api.disneyapi.dev/character?name=Mickey%20Mouse)
+  
+  Filter a specific character using the `character?params` endpoint.
+  ```
+  https://api.disneyapi.dev/character?name=Mickey%20Mouse
+  ```
+
+  ```json
+  {
+      count: 1,
+      data: [
+        {
+          _id: 4703,
+          films: [...],
+          shortFilms: [...],
+          tvShows: [...],
+          videoGames: [...],
+          parkAttractions: [...],
+          allies: [...],
+          enemies: [...],
+          name: "Mickey Mouse",
+          imageUrl: "https://static.wikia.nocookie.net/disney/images/9/99/Mickey_Mouse_Disney_3.jpeg",
+          url: "https://api.disneyapi.dev/characters/4703",
+        }
+      ],
   }
   ```
 
