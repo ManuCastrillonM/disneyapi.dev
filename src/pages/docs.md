@@ -169,7 +169,7 @@ characters(page: Int) {
   }
   ```
 
-- [Gat all characters](<https://api.disneyapi.dev/graphql?query=%7B%0A%20%20characters(page%3A%202)%20%7B%0A%20%20%20%20items%20%7B%0A%20%20%20%20%20%20_id%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%20%20paginationInfo%20%7B%0A%20%20%20%20%20%20hasPreviousPage%0A%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%20%20pageItemCount%0A%20%20%20%20%20%20totalPages%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D>)
+- [Get all characters](<https://api.disneyapi.dev/graphql?query=%7B%0A%20%20characters(page%3A%202)%20%7B%0A%20%20%20%20items%20%7B%0A%20%20%20%20%20%20_id%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%20%20paginationInfo%20%7B%0A%20%20%20%20%20%20hasPreviousPage%0A%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%20%20pageItemCount%0A%20%20%20%20%20%20totalPages%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D>)
   ```graphql
   {
     characters(page: 2) {
