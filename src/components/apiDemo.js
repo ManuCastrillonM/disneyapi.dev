@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import styles from './apiDemo.module.css'
+import * as styles from './apiDemo.module.css'
 
 export default class Demo extends React.Component {
   constructor(props) {
