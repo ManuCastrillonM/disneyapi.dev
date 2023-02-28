@@ -7,7 +7,6 @@ module.exports = {
     author: `@manucastrillonm`
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
