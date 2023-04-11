@@ -17,6 +17,14 @@
     margin-bottom: 30px;
 }
 
+.alert {
+    background-color: #ed254e;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+
 @media screen and (min-width: 768px) {
     .hero-title {
         font-size: 100px;
