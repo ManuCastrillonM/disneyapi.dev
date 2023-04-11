@@ -56,7 +56,9 @@ Available endpoints:
       "nextPage": "https://api.disneyapi.dev/characters?page=5",
   }
   ```
+
   Query params available:
+
   - `page`: The page number to get. Default: 1
   - `pageSize`: The number of items per page. Default: 50
 

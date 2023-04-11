@@ -47,11 +47,11 @@ export default class Demo extends React.Component {
                 <input
                   className={styles.demoInput}
                   type="text"
-                  placeholder="https://api.disneyapi.dev/characters"
+                  placeholder="https://api.disneyapi.dev/character"
                   aria-label="api endpoint"
                   id="endpointInput"
                   onKeyUp={this.getQueryData}
-                  defaultValue="https://api.disneyapi.dev/characters"
+                  defaultValue="https://api.disneyapi.dev/character"
                 />
                 <button
                   className={styles.demoButton}
