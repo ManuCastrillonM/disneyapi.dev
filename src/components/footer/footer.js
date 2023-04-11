@@ -46,7 +46,7 @@ export default class Footer extends React.Component {
           <a href="https://github.com/ManuCastrillonM/disney-api#contributors-">
             contributors
           </a>{' '}
-          - 2021
+          - 2023
         </div>
         <div>
           Disney and Disney characters are trademarks of Walt Disney Company

@@ -11,7 +11,7 @@ const Hero = () => (
     <div className={styles.alert}>
       <p>
         Important: The <i>/characters</i> endpoint will be deprecated on
-        2023-04-30. Please use the <i>/character</i> endpoint instead.
+        2023-04-30. Please use <i>/character</i> instead.
       </p>
       <p>
         Checkout the <Link to="/docs">documentation</Link> to learn how to use
