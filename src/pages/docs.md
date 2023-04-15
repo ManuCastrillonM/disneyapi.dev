@@ -63,7 +63,7 @@ Query params available:
 - `page`: The page number to get. Default: 1
 - `pageSize`: The number of items per page. Default: 50
 
-### [Get one character](https://api.disneyapi.dev/characters/308)
+### [Get one character](https://api.disneyapi.dev/character/308)
 
 Get the details about one character using the `character/:id` endpoint.
 
@@ -135,11 +135,11 @@ https://api.disneyapi.dev/character?name=Mickey%20Mouse
 Available queries:
 
 ```javascript
-character(_id: Int!): Character
-
-characterByName(name: String!): Character
-
-characters(page: Int) {
+characters(
+  page: Int,
+  pagSize: Int,
+  filter: CharacterFilterInput,
+) {
   items: [Character]
   paginationInfo: {
     hasPreviousPage: Boolean!
@@ -148,58 +148,20 @@ characters(page: Int) {
     totalPages: Int!
   }
 }
-```
 
-### [Get a character by id](<https://api.disneyapi.dev/graphql?query=%7B%0A%20%20character(_id%3A4703)%20%7B%0A%20%20%20%20_id%0A%09%09name%0A%20%20%20%20url%0A%20%20%20%20imageUrl%0A%20%20%20%20films%0A%20%20%20%20shortFilms%0A%20%20%7D%0A%7D>)
-
-```graphql
-{
-  character(_id: 4703) {
-    _id
-    name
-    url
-    imageUrl
-    films
-    shortFilms
-  }
+input CharacterFilterInput {
+  id: Int
+  name: String
+  films: String
+  shortFilms: String
+  tvShows: String
+  videoGames: String
+  alignment: String
+  parkAttractions: String
+  allies: String
+  enemies: String
 }
 ```
-
-### [Get a character by name](<https://api.disneyapi.dev/graphql?query=%7B%0A%20%20characterByName(name%3A%22Mickey%20Mouse%22)%20%7B%0A%20%20%20%20_id%0A%09%09name%0A%20%20%20%20url%0A%20%20%20%20imageUrl%0A%20%20%20%20films%0A%20%20%20%20shortFilms%0A%20%20%7D%0A%7D>)
-
-```graphql
-{
-  characterByName(name: "Mickey Mouse") {
-    _id
-    name
-    url
-    imageUrl
-    films
-    shortFilms
-  }
-}
-```
-
-### [Get all characters](<https://api.disneyapi.dev/graphql?query=%7B%0A%20%20characters(page%3A%202)%20%7B%0A%20%20%20%20items%20%7B%0A%20%20%20%20%20%20_id%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%20%20paginationInfo%20%7B%0A%20%20%20%20%20%20hasPreviousPage%0A%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%20%20pageItemCount%0A%20%20%20%20%20%20totalPages%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D>)
-
-```graphql
-{
-  characters(page: 2) {
-    items {
-      _id
-      name
-    }
-    paginationInfo {
-      hasPreviousPage
-      hasNextPage
-      pageItemCount
-      totalPages
-    }
-  }
-}
-```
-
-The default page size is 50 items, you can change it using the `pageSize` param.
 
 ## Schemas
 
