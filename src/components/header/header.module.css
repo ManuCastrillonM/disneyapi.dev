@@ -1,10 +1,7 @@
 .header {
-  left: 0;
-  right: 0;
   margin: 0 auto;
   max-width: 60%;
-  padding: 30px;
-  position: absolute;
+  padding-top: 30px;
 }
 
 .header-link {

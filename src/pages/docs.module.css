@@ -1,0 +1,11 @@
+.docs {
+  display: flex;
+}
+
+.docs-content {
+  flex: 3;
+}
+
+.docs-nav {
+  flex: 1;
+}

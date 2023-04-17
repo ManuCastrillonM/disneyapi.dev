@@ -4,11 +4,13 @@
   "version": "1.0.0",
   "author": "Manuela Castrillon <manu.cm43@gmail.com>",
   "dependencies": {
+    "@mdx-js/react": "^2.3.0",
     "axios": "^0.21.1",
     "gatsby": "^5.7.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-analytics": "^5.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
+    "gatsby-plugin-mdx": "^5.8.0",
     "gatsby-plugin-offline": "^6.7.0",
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-plugin-webfonts": "^2.3.2",
