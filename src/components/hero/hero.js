@@ -1,6 +1,5 @@
 import React from 'react'
 import * as styles from './hero.module.css'
-import { Link } from 'gatsby'
 
 const Hero = () => (
   <div className={styles.hero}>

@@ -20,6 +20,14 @@ const Header = () => (
           Docs
         </Link>
       </li>
+      <li className={styles.headerItem}>
+        <Link
+          className={styles.headerLink + ' ' + styles.headerButton}
+          to="/support-us"
+        >
+          Support Us
+        </Link>
+      </li>
     </ul>
   </header>
 )
