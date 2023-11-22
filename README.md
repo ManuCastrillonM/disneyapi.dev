@@ -12,8 +12,8 @@
 Source code for the Disney API [documentation website](https://www.disneyapi.dev)
 
 ## 🚀 Get started with the project
-Get more info about this project on the [Disney API Repo](https://github.com/ManuCastrillonM/disney-api) or the [documentation website](https://disneyapi.dev/docs/).
 
+Get more info about this project on the [Disney API Repo](https://github.com/ManuCastrillonM/disney-api) or the [documentation website](https://disneyapi.dev/docs/).
 
 ## ⚙️ Run the website locally
 

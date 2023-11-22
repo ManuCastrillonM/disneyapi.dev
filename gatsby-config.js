@@ -11,10 +11,30 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200
+            }
+          }
+        ]
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`
       }
     },
     {
@@ -42,13 +62,6 @@ module.exports = {
             }
           ]
         }
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`
       }
     },
     {
