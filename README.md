@@ -9,9 +9,13 @@
 
 [![CI](https://github.com/ManuCastrillonM/disneyapi.dev/actions/workflows/main.yml/badge.svg)](https://github.com/ManuCastrillonM/disneyapi.dev/actions/workflows/main.yml)
 
-Sourcecode for Disney API [documentation website](https://www.disneyapi.dev)
+Source code for the Disney API [documentation website](https://www.disneyapi.dev)
 
-## 🚀 Quick start
+## 🚀 Get started with the project
+Get more info about this project on the [Disney API Repo](https://github.com/ManuCastrillonM/disney-api) or the [documentation website](https://disneyapi.dev/docs/).
+
+
+## ⚙️ Run the website locally
 
 ```bash
   > git clone https://github.com/ManuCastrillonM/disneyapi.dev
