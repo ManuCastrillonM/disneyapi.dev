@@ -1,3 +1,9 @@
+.template-container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 10px 10px;
+}
+
 .template-content {
   color: #2f2f30;
 }
@@ -41,4 +47,10 @@
   color: #2f2f30;
   margin-bottom: 20px;
   text-decoration: underline #f9dc5c solid;
+}
+
+@media screen and (min-width:768px) {
+  .template-container {
+    padding: 0 30px 30px;
+  }
 }

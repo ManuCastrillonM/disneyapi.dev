@@ -11,7 +11,7 @@ const Template = ({ data }) => {
   return (
     <Layout>
       <Seo title={frontmatter.title} />
-      <div className="container">
+      <div className={styles.templateContainer}>
         <h1 className={styles.templateTitle}>{frontmatter.title}</h1>
         <div
           className={styles.templateContent}
