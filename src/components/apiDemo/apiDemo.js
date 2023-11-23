@@ -33,7 +33,7 @@ export default class Demo extends React.Component {
   render() {
     return (
       <section className={styles.demo}>
-        <div className="container">
+        <div className={styles.demoContainer}>
           <div className={styles.demoContent}>
             <div className={styles.demoHeader}>
               <span className={styles.demoHeaderRed}></span>
