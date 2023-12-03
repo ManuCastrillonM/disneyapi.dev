@@ -8,7 +8,7 @@ export default class Footer extends React.Component {
   }
 
   getServerStatus() {
-    const upDownUrl = `https://updown.io/api/checks?api-key=${process.env.GATSBY_UPDOWN_READ_ONLY_API_KEY}`
+    const upDownUrl = `https://updown.io/api/checks?api-key=ro-6ZC3Xjeu1TbqzoMJuBGk`
     fetch(upDownUrl)
       .then((response) => response.json())
       .then((data) => {
