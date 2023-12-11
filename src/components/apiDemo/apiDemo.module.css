@@ -97,7 +97,7 @@
   color: #f7f7ff;
   font-size: 14px;
   margin-top: 15px;
-  max-height: 400px;
+  height: 400px;
   overflow: scroll;
   padding: 10px;
 }
