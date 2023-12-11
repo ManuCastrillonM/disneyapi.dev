@@ -1,73 +1,101 @@
-import React from 'react'
-import axios from 'axios'
+import React, { useEffect, useState, useRef } from 'react'
 import * as styles from './apiDemo.module.css'
+import { StaticImage } from 'gatsby-plugin-image'
 
-export default class Demo extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { queryResult: '' }
-  }
+export default function Demo() {
+  const characterUrl = 'https://api.disneyapi.dev/character'
+  const [queryResult, setQueryResult] = useState('')
+  const [isAlertEnabled, setIsAlertEnabled] = useState(false)
+  const [alertMessage, setAlertMessage] = useState('')
+  const inputRef = useRef(null)
 
-  componentDidMount() {
-    this.getQueryData()
-  }
+  useEffect(() => {
+    queryData(characterUrl)
+  }, [])
 
-  getQueryData = (e) => {
-    const input = document.getElementById('endpointInput')
-    const sendButton = document.getElementById('sendButton')
-
-    if (!e || e.keyCode === 13 || e.target === sendButton) {
-      axios
-        .get(input.value)
-        .then((response) => {
-          this.setState({
-            queryResult: JSON.stringify(response.data, undefined, 2)
-          })
-        })
-        .catch((e) => {
-          this.setState({ queryResult: e.toString() })
-        })
+  async function queryData(url) {
+    try {
+      const response = await fetch(url)
+      const parsedResponse = await response.json()
+      const stringData = JSON.stringify(parsedResponse.data, undefined, 2)
+      setQueryResult(stringData)
+    } catch (error) {
+      setQueryResult(`Error retrieving data from ${url}`)
     }
   }
 
-  render() {
-    return (
-      <section className={styles.demo}>
-        <div className={styles.demoContainer}>
-          <div className={styles.demoContent}>
-            <div className={styles.demoHeader}>
-              <span className={styles.demoHeaderRed}></span>
-              <span className={styles.demoHeaderYellow}></span>
-              <span className={styles.demoHeaderGreen}></span>
-              <div className={styles.demoHeaderTitle}>Try it!</div>
-            </div>
+  async function copyQueryUrl() {
+    const url = inputRef.current.value
 
-            <div className={styles.demoBody}>
-              <div className={styles.demoRequest}>
-                <input
-                  className={styles.demoInput}
-                  type="text"
-                  placeholder="https://api.disneyapi.dev/character"
-                  aria-label="api endpoint"
-                  id="endpointInput"
-                  onKeyUp={this.getQueryData}
-                  defaultValue="https://api.disneyapi.dev/character"
+    try {
+      await navigator.clipboard.writeText(url)
+      setAlertMessage('URL copied to clipboard!')
+    } catch (err) {
+      setAlertMessage('Failed to copy: ', err)
+    }
+
+    setIsAlertEnabled(true)
+
+    setTimeout(() => {
+      setIsAlertEnabled(false)
+    }, 3000)
+  }
+
+  function getQueryData(e) {
+    if (!e || e.keyCode === 13 || e.target.id === 'sendButton') {
+      const url = inputRef.current.value
+      queryData(url)
+    }
+  }
+
+  return (
+    <section className={styles.demo}>
+      <div className={styles.demoContainer}>
+        <div className={styles.demoContent}>
+          <div className={styles.demoHeader}>
+            <span className={styles.demoHeaderRed}></span>
+            <span className={styles.demoHeaderYellow}></span>
+            <span className={styles.demoHeaderGreen}></span>
+            <div className={styles.demoHeaderTitle}>Try me!</div>
+          </div>
+          <div className={styles.demoBody}>
+            <div className={styles.demoRequest}>
+              <input
+                className={styles.demoInput}
+                type="text"
+                placeholder={characterUrl}
+                aria-label="api endpoint"
+                ref={inputRef}
+                onKeyUp={getQueryData}
+                defaultValue={characterUrl}
+              />
+              <button onClick={copyQueryUrl} className={styles.demoCopy}>
+                <StaticImage
+                  src="../../images/copy-paste-icon.svg"
+                  alt="copy url button"
                 />
-                <button
-                  className={styles.demoButton}
-                  onClick={this.getQueryData}
-                  id="sendButton"
+                <div
+                  className={`${styles.demoCopyAlert} ${
+                    isAlertEnabled ? styles.demoCopyAlertActive : ''
+                  }`}
                 >
-                  send
-                </button>
-              </div>
-              <div className={styles.demoResult}>
-                <pre>{this.state.queryResult}</pre>
-              </div>
+                  {alertMessage}
+                </div>
+              </button>
+              <button
+                className={styles.demoButton}
+                onClick={getQueryData}
+                id="sendButton"
+              >
+                send
+              </button>
+            </div>
+            <div className={styles.demoResult}>
+              <pre>{queryResult}</pre>
             </div>
           </div>
         </div>
-      </section>
-    )
-  }
+      </div>
+    </section>
+  )
 }

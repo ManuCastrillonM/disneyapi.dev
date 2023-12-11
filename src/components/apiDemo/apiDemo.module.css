@@ -39,6 +39,29 @@
   min-width: 550px;
 }
 
+.demo-copy {
+  background: #465362;
+  border-width: 1px 1px 1px 0;
+  border-color: #f7f7ff;
+  border-style: solid;
+  padding: 3px;
+  width: 30px;
+}
+
+.demo-copy-alert {
+  background-color: #ed254e;
+  border-radius: 8px;
+  color: #f7f7ff;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  transition: opacity 0.3s ease-in;
+}
+
+.demo-copy-alert-active {
+  opacity: 1;
+}
+
 .demo-header {
   margin-bottom: 5px;
   padding: 20px 20px 0 20px;
