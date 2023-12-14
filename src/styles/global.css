@@ -1,3 +1,11 @@
+:root {
+  --black: #2A2A2A;
+  --red: #E73636;
+  --white: #FFF;
+  --yellow: #f9d70b;
+  --gray: #838383;
+}
+
 html {
   font-family: 'DM Sans', sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5,16 +13,16 @@ html {
 }
 
 body {
-  background-color: #f7f7ff;
-  color: #011936;
+  background-color: var(--white);
+  color: var(--black);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: #fff;
-  text-decoration: underline #f9dc5c solid;
+  color: var(--white);
+  text-decoration: underline var(--yellow) solid;
 }
 
 .container {

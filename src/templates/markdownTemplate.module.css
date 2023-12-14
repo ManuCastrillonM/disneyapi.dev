@@ -5,11 +5,11 @@
 }
 
 .template-content {
-  color: #2f2f30;
+  color: var(--black);
 }
 
 .template-content a {
-  color: #2f2f30;
+  color: var(--black);
 }
 
 .template-content p {
@@ -22,9 +22,9 @@
 }
 
 .template-content pre {
-  background: #2f2f30;
+  background: var(--black);
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
   overflow-x: scroll;
   padding: 2em;
 }
@@ -34,7 +34,7 @@
 }
 
 .template-content tr {
-  border-bottom: 1px solid #f9dc5c;
+  border-bottom: 1px solid var(--yellow);
 }
 
 .template-content td,
@@ -44,9 +44,9 @@
 }
 
 .template-title {
-  color: #2f2f30;
+  color: var(--black);
   margin-bottom: 20px;
-  text-decoration: underline #f9dc5c solid;
+  text-decoration: underline var(--yellow) solid;
 }
 
 @media screen and (min-width:768px) {

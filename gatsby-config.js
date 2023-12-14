@@ -80,8 +80,8 @@ module.exports = {
         name: `Disney API`,
         short_name: `Disney API`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#ed254e`,
+        background_color: `#FFF`,
+        theme_color: `#E73636`,
         display: `standalone`,
         icon: `src/images/mickey-silhouette.svg`
       }

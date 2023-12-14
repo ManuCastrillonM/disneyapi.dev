@@ -3,7 +3,7 @@ slug: '/thank-you'
 title: 'Thank You'
 ---
 
-_get featured on this website by supporting this project via [http://disneyapi.dev/support-us/](http://localhost:8000/support-us/)_
+_get featured on this website by supporting this project via [http://disneyapi.dev/support-us/](http://disneyapi.dev/support-us/)_
 
 Thank You for supporting this project, because of you, this project can continue to keep growing ✨
 

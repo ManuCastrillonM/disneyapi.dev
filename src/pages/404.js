@@ -9,7 +9,7 @@ const NotFoundPage = () => (
     <div
       className="container"
       style={{
-        color: `#2f2f30`,
+        color: `#E73636`,
         textAlign: `center`
       }}
     >
@@ -17,7 +17,7 @@ const NotFoundPage = () => (
         style={{
           fontSize: `20vw`,
           margin: `0`,
-          textDecoration: `underline #f9dc5c solid`
+          textDecoration: `underline #f9d70b solid`
         }}
       >
         404
