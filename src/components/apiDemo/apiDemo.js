@@ -49,8 +49,8 @@ export default function Demo() {
   }
 
   return (
-    <section className={styles.demo}>
-      <div className={styles.demoContainer}>
+    <section>
+      <div className={`container ` + styles.demoContainer}>
         <div className={styles.demoContent}>
           <div className={styles.demoHeader}>
             <span className={styles.demoHeaderRed}></span>
@@ -64,7 +64,7 @@ export default function Demo() {
                 className={styles.demoInput}
                 type="text"
                 placeholder={characterUrl}
-                aria-label="api endpoint"
+                aria-label="type the api url here to try it"
                 ref={inputRef}
                 onKeyUp={getQueryData}
                 defaultValue={characterUrl}

@@ -1,0 +1,10 @@
+.not-found {
+  color: var(--red);
+  text-align: center;
+}
+
+.not-found-title {
+  font-size: 20vw;
+  margin: 0;
+  text-decoration: underline var(--yellow) solid;
+}

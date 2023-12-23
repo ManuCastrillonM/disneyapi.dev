@@ -17,11 +17,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div
+      style={{
+        minHeight: `100vh`,
+        display: `flex`,
+        flexDirection: `column`,
+        justifyContent: `space-between`
+      }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
 

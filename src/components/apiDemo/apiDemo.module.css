@@ -16,10 +16,7 @@
 }
 
 .demo-container {
-  margin: 0 auto;
-  max-width: 800px;
   overflow: scroll;
-  padding: 30px;
 }
 
 .demo-content {
@@ -34,7 +31,8 @@
   border-width: 1px 1px 1px 0;
   border-color: var(--white);
   border-style: solid;
-  padding: 3px;
+  cursor: pointer;
+  padding: 4px;
   width: 30px;
 }
 
