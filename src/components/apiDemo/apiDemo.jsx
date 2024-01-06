@@ -50,7 +50,7 @@ export default function Demo() {
 
   return (
     <section>
-      <div className={`container ` + styles.demoContainer}>
+      <div className={`container`}>
         <div className={styles.demoContent}>
           <div className={styles.demoHeader}>
             <span className={styles.demoHeaderRed}></span>

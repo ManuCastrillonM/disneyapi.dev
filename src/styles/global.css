@@ -25,6 +25,11 @@ a {
   text-decoration: underline var(--yellow) solid;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 .container {
   margin: 0 auto;
   max-width: 800px;

@@ -9,21 +9,8 @@ module.exports = {
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1200
-            }
-          }
-        ]
-      }
-    },
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,8 +21,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        extensions: [`.mdx`, `.md`],
         name: `pages`,
         path: `${__dirname}/src/pages/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `components`,
+        path: `${__dirname}/src/components/`
       }
     },
     {
@@ -45,7 +40,7 @@ module.exports = {
         short_name: `disney API`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/mickey-silhouette.svg` // This path is relative to the root of the site.
+        icon: `src/images/mickey-silhouette.svg`
       }
     },
     {
@@ -84,6 +79,12 @@ module.exports = {
         theme_color: `#E73636`,
         display: `standalone`,
         icon: `src/images/mickey-silhouette.svg`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-preconnect',
+      options: {
+        domains: ['https://api.disneyapi.dev/character']
       }
     }
   ],
