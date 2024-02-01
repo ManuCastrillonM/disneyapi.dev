@@ -4,7 +4,7 @@ import * as styles from './footer.module.css'
 export default class Footer extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { serverStatus: '' }
+    this.state = { isServerUp: true }
   }
 
   getServerStatus() {
@@ -12,11 +12,10 @@ export default class Footer extends React.Component {
     fetch(upDownUrl)
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ serverStatus: data[0].last_status })
+        this.setState({ isServerUp: !data[0].down })
       })
       .catch((error) => {
         console.log(`Server status: ${error}`)
-        this.setState({ serverStatus: '' })
       })
   }
 
@@ -31,7 +30,7 @@ export default class Footer extends React.Component {
           <a
             className={[
               styles.footerServerStatus,
-              this.state.serverStatus < 201
+              this.state.isServerUp
                 ? styles.footerServerStatusGreen
                 : styles.footerServerStatusRed
             ].join(' ')}
