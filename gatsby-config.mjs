@@ -1,6 +1,9 @@
-require('dotenv').config()
+import remarkGfm from 'remark-gfm';
+import * as dotenv from 'dotenv';
 
-module.exports = {
+dotenv.config({ path: '.env' });
+
+const config = {
   siteMetadata: {
     title: `Disney API`,
     description: `Disney API is a rest and GraphQL API based on the Disney characters`,
@@ -10,12 +13,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-mdx`,
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        mdxOptions: {
+          remarkPlugins: [remarkGfm]
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
+        path: `./src/images`
       }
     },
     {
@@ -23,7 +33,7 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         name: `pages`,
-        path: `${__dirname}/src/pages/`
+        path: `./src/pages/`
       }
     },
     {
@@ -83,3 +93,5 @@ module.exports = {
   ],
   pathPrefix: '/'
 }
+
+export default config;
