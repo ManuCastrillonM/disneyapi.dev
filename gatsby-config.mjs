@@ -64,24 +64,18 @@ const config = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: '385750457',
-        head: false,
-        anonymize: true,
-        respectDNT: true
-      }
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Disney API`,
-        short_name: `Disney API`,
-        start_url: `/`,
-        background_color: `#FFF`,
-        theme_color: `#E73636`,
-        display: `standalone`,
-        icon: `src/images/mickey-silhouette.svg`
+        trackingIds: [
+          'G-BWE9144WZ3'
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
       }
     },
     {
